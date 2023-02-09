@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0" />
+    <title>SL STUDIO</title>
+    <!-- 미디어쿼리 -->
+    <link rel="stylesheet" href="./style/mediaQueries_m.css" />
+    <link rel="stylesheet" href="./style/mediaQueris_p.css" />
+    <!-- 폰트 -->
+    <link rel="stylesheet" href="./font/font.css" />
+    <!-- 리셋 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css"
+    />
+    <!-- 오픈그래피 -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.sl-studio.co.kr" />
+    <meta
+      property="og:description"
+      content="SL Studio는 서울랜드와 최고의 K팝 스타를 발굴한 이솔림 대표의 노하우가 결합된 국내 최고 수준의 종합 엔터테인먼트 아카데미입니다."
+    />
+    <meta
+      property="og:keywords"
+      content="ABOUT, TRAINER, CLASS, AUDITION, KIDS, ARCHIVE, NOTICE"
+    />
+    <meta property="og:title" content="SL STUDIO" />
+    <meta
+      name="description"
+      content="SL Studio는 서울랜드와 최고의 K팝 스타를 발굴한 이솔림 대표의 노하우가 결합된 국내 최고 수준의 종합 엔터테인먼트 아카데미입니다."
+    />
+    <meta
+      name="keywords"
+      content="ABOUT, TRAINER, CLASS, AUDITION, KIDS, ARCHIVE, NOTICE"
+    />
+    <!-- <meta property="og:image" content="/" /> -->
+    <!-- 스와이퍼 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+
+    <!-- 폰트어썸 -->
+    <script
+      src="https://kit.fontawesome.com/9f5b1f2fa4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header_video">
+      <video meted loop playsinline preload="metadata">
+        <source src="./images/main_video.mp4" type="video/mp4" />
+      </video>
+      <nav>
+        <h1 class="flex_wrap">
+          <strong id="logo">로고</strong>
+        </h1>
+        <!-- 메뉴 -->
+        <ul id="gnb" class="flex_wrap">
+          <li>
+            <a href="/">about</a>
+            <ul>
+              <li>sl stuio</li>
+              <li>greeting</li>
+              <li>facility</li>
+            </ul>
+          </li>
+          <li><a href="/">trainer</a></li>
+          <li><a href="/">class</a></li>
+          <li><a href="/">audition</a></li>
+          <li><a href="/">kids</a></li>
+          <li>
+            <a href="/">archive</a>
+            <ul>
+              <li>photo</li>
+              <li>video</li>
+              <li>global camp</li>
+            </ul>
+          </li>
+          <li>
+            <a href="/">notice</a>
+            <ul>
+              <li>news</li>
+              <li>faq</li>
+              <li>contact</li>
+            </ul>
+          </li>
+        </ul>
+        <div class="menu_wrapper flex_wrap">
+          <!-- 모바일 아이콘 -->
+          <div id="toggle_btn" class="flex_wrap">
+            <div id="mobile_icon">
+              <span class="bar1"></span>
+              <span class="bar2"></span>
+              <span class="bar3"></span>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="main_title">
+        <h1>
+          <span>sl studio</span><span>kpop</span><span>incubating</span
+          ><span>sl studio</span>system
+        </h1>
+        <div calss="main_util">
+          <ul class="sns">
+            <li>facebook</li>
+            <li>insta</li>
+            <li>youtube</li>
+          </ul>
+          <ul class="swiper_arrow">
+            <li>prev</li>
+            <li>next</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="box1">
+      <h2>program</h2>
+      <swiper-container
+        style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+        class="mySwiper"
+        speed="600"
+        parallax="true"
+        pagination="true"
+        pagination-clickable="true"
+        navigation="true"
+      >
+        <div
+          slot="container-start"
+          class="parallax-bg"
+          style="
+            background-image: url(https://swiperjs.com/demos/images/nature-1.jpg);
+          "
+          data-swiper-parallax="-23%"
+        ></div>
+
+        <swiper-slide>
+          <div class="title" data-swiper-parallax="-300">Slide 1</div>
+          <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+          <div class="text" data-swiper-parallax="-100">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+              laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
+              Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
+              Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+              ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
+              tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+            </p>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="title" data-swiper-parallax="-300">Slide 2</div>
+          <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+          <div class="text" data-swiper-parallax="-100">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+              laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
+              Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
+              Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+              ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
+              tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+            </p>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="title" data-swiper-parallax="-300">Slide 3</div>
+          <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+          <div class="text" data-swiper-parallax="-100">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+              laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
+              Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
+              Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+              ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
+              tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+            </p>
+          </div>
+        </swiper-slide>
+      </swiper-container>
+    </div>
+    <div class="box2">
+      <h2>global camp</h2>
+      <p>
+        보컬, 댄스, 촬영까지 참여자 맞춤 프로그램 구성으로 더욱 알찬 글로벌
+        캠프를 경험해보세요.
+      </p>
+      <ul class="camp">
+        <li>
+          <a href="#">
+            <p class="cat">global camp</p>
+            <!-- after있음 -->
+            <div class="camp_img">
+              <div class="box">
+                <img
+                  src="./images/camp_img1.jpg"
+                  alt="img1"
+                /><!-- after있음 -->
+              </div>
+            </div>
+            <div class="camp_txt">
+              <p>SL Studio 글로벌캠프: 일본 오키나와현 학생들</p>
+              <span>2022. 08. 25</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <p class="cat">global camp</p>
+            <!-- after있음 -->
+            <div class="camp_img">
+              <div class="box">
+                <img
+                  src="./images/camp_img2.jpg"
+                  alt="img2"
+                /><!-- after있음 -->
+              </div>
+            </div>
+            <div class="camp_txt">
+              <p>SL Studio 글로벌캠프: 태국</p>
+              <span>2022. 08. 26</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <a href="#" class="more">VIEW MORE</a
+      ><!-- before 있음 -->
+    </div>
+    <div class="box3">
+      <h3>sl studio trainer list</h3>
+      <div class="box3_video">
+        <a href="#">
+          <video
+            autoplay=""
+            muted=""
+            loop=""
+            playsinline=""
+            preload="metadata"
+            poster="''"
+          >
+            <source src="./images/box3_video.mp4" />
+          </video>
+        </a>
+      </div>
+    </div>
+    <div class="box4">
+      <h5>we are <span>#sl studio</span></h5>
+      <a
+        href="https://www.youtube.com/channel/UCfrbYEClnAZsku2fhyqn7Nw"
+        target="_blank"
+        title="SL Studio 유튜브 이동 새창열림"
+        class="youtube"
+      >
+        Go to YouTube
+        <span class="link-ico">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </span>
+      </a>
+      <div class="swiper2">
+        <swiper-container
+          class="mySwiper2"
+          pagination="true"
+          pagination-clickable="true"
+          space-between="30"
+          slides-per-view="3"
+        >
+          <swiper-slide>Slide 1</swiper-slide>
+          <swiper-slide>Slide 2</swiper-slide>
+          <swiper-slide>Slide 3</swiper-slide>
+          <swiper-slide>Slide 4</swiper-slide>
+          <swiper-slide>Slide 5</swiper-slide>
+          <swiper-slide>Slide 6</swiper-slide>
+          <swiper-slide>Slide 7</swiper-slide>
+          <swiper-slide>Slide 8</swiper-slide>
+          <swiper-slide>Slide 9</swiper-slide>
+        </swiper-container>
+      </div>
+    </div>
+    <div class="box5">
+      <div class="box4_inner">
+        <h2>sl partner</h2>
+        <p><b>sl studio</b>는 수많은 파트너사와 함께하고 있습니다.</p>
+      </div>
+      <ul class="partners">
+        <li><img src="./images/banner (1).jpg" alt="banner" /></li>
+        <li><img src="./images/banner (2).jpg" alt="banner" /></li>
+        <li><img src="./images/banner (1).svg" alt="banner_svg" /></li>
+        <li><img src="./images/banner (2).svg" alt="banner_svg" /></li>
+        <li><img src="./images/banner (3).svg" alt="banner_svg" /></li>
+        <li><img src="./images/banner (4).svg" alt="banner_svg" /></li>
+        <li><img src="./images/banner (5).svg" alt="banner_svg" /></li>
+        <li><img src="./images/banner (6).svg" alt="banner_svg" /></li>
+        <li><img src="./images/banner (7).svg" alt="banner_svg" /></li>
+        <li><img src="./images/banner (8).svg" alt="banner_svg" /></li>
+        <li><img src="./images/banner (9).svg" alt="banner_svg" /></li>
+        <li><img src="./images/banner (10).svg" alt="banner_svg" /></li>
+        <li><img src="./images/banner (11).svg" alt="banner_svg" /></li>
+        <li><img src="./images/banner (12).svg" alt="banner_svg" /></li>
+        <li><img src="./images/banner (13).svg" alt="banner_svg" /></li>
+        <li><img src="./images/banner (14).svg" alt="banner_svg" /></li>
+        <li><img src="./images/banner (15).svg" alt="banner_svg" /></li>
+        <li><img src="./images/banner (16).svg" alt="banner_svg" /></li>
+        <li><img src="./images/banner (17).svg" alt="banner_svg" /></li>
+        <li><img src="./images/banner (18).svg" alt="banner_svg" /></li>
+        <li><img src="./images/banner (19).svg" alt="banner_svg" /></li>
+        <li><img src="./images/banner (20).svg" alt="banner_svg" /></li>
+        <li><img src="./images/banner (21).svg" alt="banner_svg" /></li>
+        <li><img src="./images/banner (22).svg" alt="banner_svg" /></li>
+        <li><img src="./images/banner (23).svg" alt="banner_svg" /></li>
+        <li><img src="./images/banner (24).svg" alt="banner_svg" /></li>
+        <li><img src="./images/banner (1).png" alt="banner_png" /></li>
+        <li><img src="./images/banner (2).png" alt="banner_png" /></li>
+        <li><img src="./images/banner (3).png" alt="banner_png" /></li>
+        <li><img src="./images/banner (4).png" alt="banner_png" /></li>
+        <li><img src="./images/banner (5).png" alt="banner_png" /></li>
+        <li><img src="./images/banner (6).png" alt="banner_png" /></li>
+        <li><img src="./images/banner (7).png" alt="banner_png" /></li>
+        <li><img src="./images/banner (8).png" alt="banner_png" /></li>
+      </ul>
+    </div>
+    <div class="box6">
+      <h2>notice</h2>
+      <p>sl studio의 새로운 소식을 전해드립니다.</p>
+      <ul class="news_list">
+        <li>
+          <div class="cat">news</div>
+          <div class="news_txt">
+            <h6>SL STUDIO ON-LINE CLASS</h6>
+            <p>
+              For those of you who want to prepare for the audition, sl studio
+              online class has finally been opened.&nbsp;Follow the steps below.
+              If you first proceed with the consultation supportthrough the
+              attached Google application, the online consultation is followed
+              by the lesson.(we are Sorry that only English and Korean are
+              available for this lesson.)⠀⠀★Here's Detail stepsStep 1) Apply
+              google applicationStep 2) Online chatting with SL's
+              staff&nbsp;(basic information &amp; condition check)Step 3)
+              Payment of class fee through PayPal &amp;&nbsp;sign the documents
+              for registrationStep 4) Share sns ID which can contact with
+              teacher&nbsp;for making lesson scheduleStep 5) Lesson
+              start!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </p>
+            <span>2022. 11. 03</span>
+          </div>
+        </li>
+        <li>
+          <div class="cat">news</div>
+          <div class="news_txt">
+            <h6>SL Studio 첫 정기공연 STAGE88</h6>
+            <p>
+              STAGE 88의 의미를 아시나요??SL Studio의 캐치프레이즈인 "star..t!
+              별이 되기 위한 시작"에도 이런 의미가 담겨있습니다.
+              :)(소근소근)그리고 아시는지모르시는지~서울랜드 첫 개장한 연도가
+              1988년 라는 말씀~~!!!별이 되기 위한 우리 청소년들의 꿈이 가득
+              담긴&nbsp;SL Studio 의 정기 공연이 서울랜드 "이벤트홀" 에서
+              진행됩니다.&nbsp;일정 : 2020년 1월 18일 (토)시간 : PM 2:00 ~
+              4:00장소 : 서울랜드 "이벤트 홀"&nbsp;당일, 서울랜드 입장객이라면
+              누구든 관람 가능합니다.많은 관심으로 친구들의 꿈을 응원해주세요
+              :)SL Studio는 여러분을 응원합니다.&nbsp;【상담 및 문의】☎
+              02.511.7088카카오톡 @slstudio
+            </p>
+            <span>2020. 01. 13</span>
+          </div>
+        </li>
+        <li>
+          <div class="cat">news</div>
+          <div class="news_txt">
+            <h6>SL STUDIO가 새롭게 오픈하였습니다.</h6>
+            <span>2022. 08. 26</span>
+          </div>
+        </li>
+      </ul>
+      <a href="#" class="more">view more</a>
+    </div>
+
+    <footer id="footer">
+      <div class="inner">
+        <div class="f_tit">
+          <div class="left">
+            <p>KPOP INCUBATING SYSTEM</p>
+            <p>SL Studio</p>
+          </div>
+          <div class="right">
+            <div class="f_contact">
+              <a href="https://pf.kakao.com/_sWTgj/chat" target="_blank"
+                >카카오톡 상담</a
+              >
+              <a href="/?p=17">1:1 문의</a>
+            </div>
+            <p>서울시 강남구 압구정로 30길 63-1</p>
+            <p>02) 511 - 7088</p>
+            <p>slstudiotraining@gmail.com</p>
+          </div>
+        </div>
+        <div class="f_contact">
+          <a href="https://pf.kakao.com/_sWTgj/chat" target="_blank"
+            >카카오톡 상담</a
+          >
+          <a href="/?p=17">1:1 문의</a>
+        </div>
+        <div class="f_util">
+          <div class="left">
+            <div class="family_site">
+              <p>Family Site</p>
+              <ul>
+                <li>
+                  <a
+                    href=" https://seoulland.co.kr/"
+                    target="_blank"
+                    title="새창열림"
+                    >Seoul Land</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="http://www.best-kids.co.kr/"
+                    target="_blank"
+                    title="새창열림"
+                    >Best Kids</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="http://www.modernpilates.or.kr/"
+                    target="_blank"
+                    title="새창열림"
+                    >Modern Pilates</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <ul class="sns clearfix">
+              <li class="kakao">
+                <a
+                  href="https://pf.kakao.com/_sWTgj/chat"
+                  target="_blank"
+                  title="새창열림"
+                  >카카오톡</a
+                >
+              </li>
+              <li class="facebook">
+                <a
+                  href="https://www.facebook.com/SLstudio.academy/"
+                  target="_blank"
+                  title="새창열림"
+                  >페이스북</a
+                >
+              </li>
+              <li class="instagram">
+                <a
+                  href="https://www.instagram.com/slstudio.academy/"
+                  target="_blank"
+                  title="새창열림"
+                  >인스타그램</a
+                >
+              </li>
+              <li class="youtube">
+                <a
+                  href="https://www.youtube.com/c/SLstudio_academy"
+                  target="_blank"
+                  title="새창열림"
+                  >유튜브</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="right">
+            <p>© SL STUDIO.</p>
+          </div>
+        </div>
+      </div>
+      <div class="top_btn_box on">
+        <a href="#">
+          <button class="top_btn">
+            <i class="fa-solid fa-arrow-up"></i>
+          </button>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
