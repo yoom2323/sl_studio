@@ -1,3 +1,11 @@
 @charset "utf-8";
 @media (min-width: 768px) {
+  header video {
+    width: clamp(768px, 100%, 1920px);
+    aspect-ratio: 16 / 9;
+  }
+  header nav .flex_wrap #logo {
+    width: 184px;
+    height: 46.2px;
+  }
 }

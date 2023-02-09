@@ -122,3 +122,26 @@ swiper-slide .text {
     display: block;
   }
 }
+/* 헤더 */
+header {
+  position: relative;
+}
+header video {
+  object-fit: cover;
+  width: clamp(390px, 100%, 768px);
+  aspect-ratio: 1 / 1;
+  transition: 0.3s;
+}
+header nav {
+  display: flex;
+  position: absolute;
+  top: 0;
+}
+header nav .flex_wrap #logo {
+  display: block;
+  text-indent: -9999px;
+  background: url("../images/logo.png") no-repeat 100% / cover;
+  width: 99px;
+  height: 24.86px;
+  transition: 0.3s;
+}
