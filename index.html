@@ -15,6 +15,16 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css"
     />
+    <!-- 구글 아이콘 -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- XEIcon -->
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
     <!-- 오픈그래피 -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://www.sl-studio.co.kr" />
@@ -44,56 +54,80 @@
       src="https://kit.fontawesome.com/9f5b1f2fa4.js"
       crossorigin="anonymous"
     ></script>
+
+    <script defer src="./script/headermenu.js"></script>
   </head>
   <body>
+    <div class="gnbWrapper">
+      <ul id="gnb" class="flex_wrap">
+        <li class="liX"><i id=gnbX class="fa-solid fa-xmark"></i></li>
+        <li id="about">
+          <p>about</p>
+          <ul id="aboutLi">
+            <li>sl stuio</li>
+            <li>greeting</li>
+            <li>facility</li>
+          </ul>
+        </li>
+        <li><p>trainer</p></li>
+        <li><p>class</p></li>
+        <li><p>audition</p></li>
+        <li><p>kids</p></li>
+        <li id="archive">
+          <p>archive</p>
+          <ul id="archiveLi">
+            <li>photo</li>
+            <li>video</li>
+            <li>global camp</li>
+          </ul>
+        </li>
+        <li id="notice">
+          <p>notice</p>
+          <ul id="noticeLi">
+            <li>news</li>
+            <li>faq</li>
+            <li>contact</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
     <header class="header_video">
       <video meted loop playsinline preload="metadata">
         <source src="./images/main_video.mp4" type="video/mp4" />
       </video>
+
       <nav>
         <h1 class="flex_wrap">
           <strong id="logo">로고</strong>
         </h1>
-        <!-- 메뉴 -->
-        <ul id="gnb" class="flex_wrap">
-          <li>
-            <a href="/">about</a>
-            <ul>
-              <li>sl stuio</li>
-              <li>greeting</li>
-              <li>facility</li>
-            </ul>
-          </li>
-          <li><a href="/">trainer</a></li>
-          <li><a href="/">class</a></li>
-          <li><a href="/">audition</a></li>
-          <li><a href="/">kids</a></li>
-          <li>
-            <a href="/">archive</a>
-            <ul>
-              <li>photo</li>
-              <li>video</li>
-              <li>global camp</li>
-            </ul>
-          </li>
-          <li>
-            <a href="/">notice</a>
-            <ul>
-              <li>news</li>
-              <li>faq</li>
-              <li>contact</li>
-            </ul>
-          </li>
-        </ul>
         <div class="menu_wrapper flex_wrap">
           <!-- 모바일 아이콘 -->
           <div id="toggle_btn" class="flex_wrap">
-            <div id="mobile_icon">
-              <span class="bar1"></span>
-              <span class="bar2"></span>
-              <span class="bar3"></span>
-            </div>
+            <i class="xi-share-alt-o"></i>
+            <i id="searchI"class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-bars"></i>
           </div>
+          <!-- 메뉴 -->
+          <ul id="share" class="flex_wrap">
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="xi-kakaotalk"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="xi-naver"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="xi-share"></i></a>
+            </li>
+          </ul>
+
+          </div>
+ 
         </div>
       </nav>
       <div class="main_title">
@@ -113,7 +147,15 @@
           </ul>
         </div>
       </div>
-    </header>
+      <div id="search" class="flex_wrap">
+        <div class="searchWindow">
+          <input type="text" placeholder="검색어를 입력해주세요." />
+          <i id=#searchI2 class="fa-solid fa-magnifying-glass" onclick="alert('검색어를 입력해주세요.')"></i>
+        </div>
+        <div class="xMark"><i class="fa-solid fa-xmark"></i></div>
+      </div>
+    
+</header>
     <div class="box1">
       <h2>program</h2>
       <swiper-container
