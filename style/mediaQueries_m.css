@@ -4,7 +4,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Noto Sans KR", -apple-system, BlinkMacSystemFont,
+  font-family: "Poppins", "Noto Sans KR", -apple-system, BlinkMacSystemFont,
     "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
   text-transform: uppercase;
 }
@@ -131,7 +131,6 @@ header video {
   object-fit: cover;
   width: clamp(390px, 100%, 768px);
   aspect-ratio: 1 / 1;
-  transition: 0.3s;
 }
 
 header nav {
@@ -249,17 +248,14 @@ header #search .xMark i {
   position: absolute;
   top: 0;
   right: 0;
-  transition: 0.5s;
-  overflow: hidden;
-  transition: 0.5s;
   z-index: 9999;
+  overflow: hidden;
 }
 .gnbWrapper #gnb {
   margin: 30px 20px;
   color: white;
   font-weight: bold;
   font-size: 1.2em;
-  transition: 0.5s;
 }
 .gnbWrapper #gnb li {
   margin-bottom: 10px;
@@ -268,9 +264,6 @@ header #search .xMark i {
   display: flex;
   justify-content: end;
   transform: translateY(-20px);
-}
-.gnbWrapper #gnb li p {
-  transition: 0.3s;
 }
 .gnbWrapper #gnb li i {
   cursor: pointer;
@@ -285,7 +278,6 @@ header #search .xMark i {
 .gnbWrapper #gnb li ul li {
   height: 0;
   overflow: hidden;
-  transition: 0.3s;
   font-size: 16px;
   color: #b69be8;
   margin: 15px;
@@ -296,7 +288,6 @@ header #search .xMark i {
 }
 .headTitle {
   cursor: pointer;
-  transition: 0.5s;
   display: flex;
   justify-content: space-between;
 }
@@ -341,7 +332,6 @@ header #search .xMark i {
   text-decoration: none;
 }
 .gnbWrapper #gnb #about #aboutLi.active {
-  transition: 0.5s;
   height: 100%;
 }
 .gnbWrapper #gnb #about #aboutLi.active li {
@@ -356,7 +346,6 @@ header #search .xMark i {
 }
 .gnbWrapper #gnb #archive #archiveLi.active {
   height: 100%;
-  transition: 0.5s;
 }
 .gnbWrapper #gnb #archive #archiveLi.active li {
   display: block;
@@ -364,15 +353,39 @@ header #search .xMark i {
 }
 .gnbWrapper #gnb #notice {
   cursor: pointer;
-  transition: 0.5s;
 }
 .gnbWrapper #gnb #notice li {
   height: 0;
 }
 .gnbWrapper #gnb #notice #noticeLi.active li {
   height: 100%;
-  transition: 0.5s;
 }
 .gnbWrapper #gnb #notice #noticeLi.active {
   height: 100%;
+}
+.main_title {
+  position: absolute;
+  bottom: 20vh;
+  color: white;
+  margin: 3vw;
+}
+.main_title h1 {
+  font-weight: bold;
+  font-size: 2em;
+  line-height: 30px;
+}
+.main_util {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2em;
+  position: absolute;
+  bottom: 0;
+}
+.main_util .sns {
+  display: flex;
+}
+.main_util .swiper_arrow {
+  display: flex;
+  font-size: 0.5em;
 }
