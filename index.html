@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=divice-width, initial-scale=1.0" />
     <title>SL STUDIO</title>
+        <!-- 리셋 -->
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css"
+      />
     <!-- 미디어쿼리 -->
     <link rel="stylesheet" href="./style/mediaQueries_m.css" />
     <link rel="stylesheet" href="./style/mediaQueris_p.css" />
@@ -13,11 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
-    <!-- 리셋 -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css"
-    />
+
     <!-- 구글 아이콘 -->
     <link
       rel="stylesheet"
@@ -49,8 +50,7 @@
       content="ABOUT, TRAINER, CLASS, AUDITION, KIDS, ARCHIVE, NOTICE"
     />
     <!-- <meta property="og:image" content="/" /> -->
-    <!-- 스와이퍼 -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+
 
     <!-- 폰트어썸 -->
     <script
@@ -58,7 +58,15 @@
       crossorigin="anonymous"
     ></script>
 
-    <script defer src="./script/headermenu.js"></script>
+
+        <!-- 스와이퍼 -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script> -->
+        <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
+
   </head>
   <body>
     <div class="gnbWrapper">
@@ -147,8 +155,8 @@
 
         </ul>
         <ul class="swiper_arrow">
-          <li>prev</li>
-          <li>next</li>
+          <li>&lt; prev</li>
+          <li>next &gt;</li>
         </ul>
       </div>
       <div id="search" class="flex_wrap">
@@ -162,70 +170,25 @@
 </header>
     <div class="box1">
       <h2>program</h2>
-      <swiper-container
-        style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
-        class="mySwiper"
-        speed="600"
-        parallax="true"
-        pagination="true"
-        pagination-clickable="true"
-        navigation="true"
+      <div
+      id="mainSwiper"
+      class="swiper-container"
       >
-        <div
-          slot="container-start"
-          class="parallax-bg"
-          style="
-            background-image: url(https://swiperjs.com/demos/images/nature-1.jpg);
-          "
-          data-swiper-parallax="-23%"
-        ></div>
-
-        <swiper-slide>
-          <div class="title" data-swiper-parallax="-300">Slide 1</div>
-          <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
-          <div class="text" data-swiper-parallax="-100">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-              laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-              Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-              Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-              ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-              tincidunt ut libero. Aenean feugiat non eros quis feugiat.
-            </p>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="title" data-swiper-parallax="-300">Slide 2</div>
-          <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
-          <div class="text" data-swiper-parallax="-100">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-              laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-              Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-              Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-              ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-              tincidunt ut libero. Aenean feugiat non eros quis feugiat.
-            </p>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="title" data-swiper-parallax="-300">Slide 3</div>
-          <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
-          <div class="text" data-swiper-parallax="-100">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-              laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-              Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-              Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-              ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-              tincidunt ut libero. Aenean feugiat non eros quis feugiat.
-            </p>
-          </div>
-        </swiper-slide>
-      </swiper-container>
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide"><img src="./images/swiperimg1.jpg" alt="img1"></li>
+        <li class="swiper-slide"><img src="./images/swiperimg2.jpg" alt="img2"></li>
+        <li class="swiper-slide"><img src="./images/swiperimg3.jpg" alt="img3"></li>
+        <li class="swiper-slide"><img src="./images/swiperimg4.jpg" alt="img4"></li>
+        <li class="swiper-slide"><img src="./images/swiperimg5.jpg" alt="img5"></li>
+        <li class="swiper-slide"><img src="./images/swiperimg6.jpg" alt="img6"></li>
+      </ul>
+      <div class="arrowBox">
+        <div class="pagination1"></div>
+        <div class="swiper-arrow1"><img src="./images/swiperArrowLeft.png" alt="sALeft"></div>
+          <div class="line">│</div>
+        <div class="swiper-arrow2"><img src="./images/swiperArrowRight.png" alt="sARight"></div>
+      </div>
+      </div>
     </div>
     <div class="box2">
       <h2>global camp</h2>
@@ -525,5 +488,8 @@
         </a>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script defer src="./script/headermenu.js"></script>
+    <script defer src="./script/swiper1.js"></script>
   </body>
 </html>

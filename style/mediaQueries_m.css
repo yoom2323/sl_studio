@@ -11,8 +11,8 @@ body {
 /* 스와이퍼 */
 swiper-container {
   width: 100%;
-  height: 100%;
-  background: #000;
+  height: 80%;
+  background: white;
 }
 
 swiper-slide {
@@ -126,11 +126,14 @@ swiper-slide .text {
 header {
   position: relative;
   overflow: hidden;
+  margin: 0;
 }
+
 header video {
   object-fit: cover;
   width: clamp(390px, 100%, 768px);
   aspect-ratio: 1 / 1;
+  margin: 0;
 }
 
 header nav {
@@ -365,7 +368,7 @@ header #search .xMark i {
 }
 .main_title {
   position: absolute;
-  bottom: 20vh;
+  bottom: 8vh;
   color: white;
   margin: 3vw;
 }
@@ -378,14 +381,68 @@ header #search .xMark i {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  font-size: 2em;
+  font-size: 1.5em;
   position: absolute;
   bottom: 0;
+  color: white;
 }
 .main_util .sns {
   display: flex;
+  cursor: pointer;
+  margin: 3vw;
+}
+.main_util .sns li {
+  margin-right: 4vw;
 }
 .main_util .swiper_arrow {
   display: flex;
   font-size: 0.5em;
+  cursor: pointer;
+  margin: 3vw;
+}
+.main_util .swiper_arrow li {
+  margin-left: 4vw;
+}
+.box1 {
+  background-color: #b69be8;
+  height: 85vh;
+  transform: translateY(-7px);
+  padding: 3vw;
+}
+.box1 h2 {
+  color: white;
+  font-size: 1.7em;
+  padding-top: 6vh;
+}
+
+#mainSwiper {
+  overflow: hidden;
+}
+.pagination1 {
+  color: white;
+  font-size: 0.8em;
+  width: 50px;
+}
+.swiper-arrow1 {
+}
+.swiper-arrow2 {
+}
+.line {
+  color: white;
+}
+.arrowBox {
+  display: flex;
+}
+.swiper-arrow1,
+.swiper-arrow2 {
+  /* position: absolute; */
+  cursor: pointer;
+}
+
+#mainSwiper .swiper-wrapper {
+  aspect-ratio: auto;
+}
+#mainSwiper .swiper-wrapper .swiper-slide img {
+  object-fit: cover;
+  aspect-ratio: auto;
 }
