@@ -242,4 +242,41 @@
   .swiper-arrow2 {
     width: 80px;
   }
+  .camp {
+    display: flex;
+    justify-content: space-between;
+  }
+  .camp li {
+    width: 50%;
+  }
+  .camp li a .camp_img .box img {
+    width: 800px;
+  }
+  h2 {
+    font-size: 3em;
+  }
+  .box2 > p {
+    font-size: 1.3em;
+  }
+  .more {
+    position: absolute;
+    top: 17.5vh;
+    right: 6vw;
+  }
+  .box3 .box3_video a .video_p {
+    display: block;
+  }
+  .box3 .box3_video a .video_m {
+    display: none;
+  }
+  .box3 h3 {
+    width: 30%;
+    font-size: 2em;
+    text-transform: capitalize;
+    padding: 6vw;
+  }
+  .box3 h3 .line {
+    width: 50px;
+    border-bottom: 2px solid white;
+  }
 }
