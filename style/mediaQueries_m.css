@@ -405,9 +405,10 @@ header #search .xMark i {
 }
 .box1 {
   background-color: #b69be8;
-  height: 85vh;
+  height: 630px;
   transform: translateY(-7px);
   padding: 3vw;
+  position: relative;
 }
 .box1 h2 {
   color: white;
@@ -423,24 +424,39 @@ header #search .xMark i {
   font-size: 0.8em;
   width: 50px;
 }
-.swiper-arrow1 {
+.swiper-arrow1:hover {
+  opacity: 1;
 }
-.swiper-arrow2 {
+.swiper-arrow2:hover {
+  opacity: 1;
 }
 .line {
   color: white;
 }
 .arrowBox {
   display: flex;
+  margin-top: 25px;
+}
+.box1 #mainSwiper .arrowBox .pagination1 {
+  font-family: "Noto Sans", sans-serif;
 }
 .swiper-arrow1,
 .swiper-arrow2 {
   /* position: absolute; */
   cursor: pointer;
+  opacity: 0.5;
 }
 
 #mainSwiper .swiper-wrapper {
   aspect-ratio: auto;
+}
+#mainSwiper .swiper-wrapper .swiper-slide {
+  position: relative;
+  color: white;
+}
+#mainSwiper .swiper-wrapper .swiper-slide p {
+  height: 80px;
+  margin-top: 15px;
 }
 #mainSwiper .swiper-wrapper .swiper-slide img {
   object-fit: cover;
