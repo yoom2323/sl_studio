@@ -7,6 +7,7 @@ body {
   font-family: "Poppins", "Noto Sans KR", -apple-system, BlinkMacSystemFont,
     "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
   text-transform: uppercase;
+  overflow-x: hidden;
 }
 /* 스와이퍼 */
 swiper-container {
@@ -500,7 +501,7 @@ h2 {
   color: gray;
   font-family: "Noto Sans", sans-serif;
 }
-.camp li a .cat {
+.cat {
   display: block;
   position: absolute;
   top: 0;
@@ -572,8 +573,7 @@ h2 {
 .box3 .box3_video {
   width: 100%;
 }
-.box3 .box3_video a .video_m {
-}
+
 .box3 .box3_video a .video_p {
   display: none;
 }
@@ -582,12 +582,14 @@ h2 {
   object-fit: contain;
 }
 .box4 {
-  padding: 3vw;
   overflow: hidden;
+  background-color: #f6f7f8;
+  padding-bottom: 10vh;
 }
 .box4 h2 {
   width: 500px;
   margin: 0 auto;
+  text-align: center;
 }
 .box4 a {
   display: block;
@@ -616,4 +618,180 @@ h2 {
 }
 .arrowBox-1 > div {
   color: black;
+}
+
+.box4 #videoSwiper .swiper-wrapper li a {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.box4 #videoSwiper .swiper-wrapper li a:hover::before {
+  content: "";
+  width: 150px;
+  height: 150px;
+  background-color: rgba(255, 255, 255, 0.384);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 999;
+  border-radius: 50%;
+}
+.box4 #videoSwiper .swiper-wrapper li a:hover::after {
+  content: "▶";
+  color: #ddd;
+  line-height: 110px;
+  font-size: 2em;
+  width: 120px;
+  height: 120px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 999;
+  border-radius: 50%;
+}
+
+.box4 #videoSwiper .swiper-wrapper li p {
+  margin: 0 0 0 7.5vw;
+  font-size: 1.3em;
+  transform: translateY(0px);
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+}
+.box4 .arrowBox-1 {
+  display: none;
+}
+.box5 {
+  padding: 3vw;
+}
+.box5 p {
+  font-size: 1.3em;
+}
+.box6 {
+  padding: 3vw 3vw 10vw 3vw;
+  background-color: #f6f7f8;
+  position: relative;
+}
+
+.box6 .noticeTxt p {
+  font-size: 1.3em;
+}
+.box6 .noticeTxt {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 5vh;
+  text-transform: none;
+}
+.box6 .news_list li {
+  position: relative;
+  border-bottom: 1px solid #ddd;
+  padding: 5vh 0 5vh 0;
+  display: flex;
+  cursor: pointer;
+}
+.box6 .news_list li:hover {
+  background-color: white;
+}
+.box6 .news_list li:nth-child(1) {
+  border-top: 1px solid black;
+}
+.box6 .news_list li:nth-child(3) {
+  border-bottom: 1px solid black;
+  margin-bottom: 5vh;
+}
+.box6 .news_list li .cat {
+  position: relative;
+  left: 2.5vh;
+  text-align: center;
+  font-size: 1.5em;
+  display: block;
+}
+.box6 .news_list li .news_txt {
+  padding: 0 5vh 0 5vh;
+  overflow: hidden;
+}
+
+.box6 .news_list li .news_txt h6 {
+  font-size: 1.4em;
+  margin-bottom: 2vh;
+}
+.box6 .news_list li .news_txt p {
+  font-family: "Noto Sans", sans-serif;
+  text-transform: none;
+  font-weight: 300;
+  font-size: 1.1em;
+  margin-bottom: 2vh;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.box6 .news_list li .news_txt span {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+
+  color: #525252;
+}
+footer {
+  background-color: #0e0e10;
+  color: white;
+  padding: 6vw 3vw;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer .inner .f_tit .left p {
+  font-size: 1.3em;
+  text-transform: none;
+}
+footer .inner div {
+  margin-bottom: 3vh;
+}
+footer .inner .right {
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+footer .inner .right .f_contact a {
+  margin-right: 5vh;
+}
+footer .inner .right .f_contact a span {
+  vertical-align: bottom;
+  margin-left: 2vh;
+}
+footer .inner .right p {
+  font-size: 0.8em;
+  opacity: 0.7;
+  font-family: "Noto Sans", sans-serif;
+  text-transform: none;
+}
+footer .inner .f_util .left .sns {
+  display: flex;
+  font-size: 1.5em;
+  opacity: 0.7;
+}
+footer .inner .f_util .left .sns li {
+  margin: 0 10px;
+}
+#top_btn_box {
+  position: relative;
+  bottom: 370px;
+  transform: translateX(390px);
+  z-index: 9999999;
+}
+#top_btn_box a button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  color: #4300bd;
+  background-color: white;
+  box-shadow: 0.7px 0px 2.2px rgba(0, 0, 0, 0.02),
+    1.8px 0px 5.3px rgba(0, 0, 0, 0.028), 3.4px 0px 10px rgba(0, 0, 0, 0.035),
+    6px 0px 17.9px rgba(0, 0, 0, 0.042), 11.3px 0px 33.4px rgba(0, 0, 0, 0.05),
+    27px 0px 80px rgba(0, 0, 0, 0.07);
 }

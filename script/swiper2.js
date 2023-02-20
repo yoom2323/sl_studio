@@ -1,16 +1,21 @@
 const videoSwiper = new Swiper("#videoSwiper", {
   parallax: true,
   navigation: {
-    prevEl: ".swiper-arrow3",
-    nextEl: ".swiper-arrow4",
+    prevEl: ".swiperArrow3",
+    nextEl: ".swiperArrow4",
   },
   loop: true,
   autoplay: {
     delay: 5000,
+    disableOnInteraction: false,
   },
+  spacebetween: 0,
+  autoHeight: true,
+  slidesPerView: 2,
+  centeredSlides: true,
 });
-const swiperArrow3 = document.querySelector(".swiper-arrow3");
-const swiperArrow4 = document.querySelector(".swiper-arrow4");
+const swiperArrow3 = document.querySelector(".swiperArrow3");
+const swiperArrow4 = document.querySelector(".swiperArrow4");
 
 swiperArrow3.addEventListener("click", function (e) {
   videoSwiper.slidePrev();
